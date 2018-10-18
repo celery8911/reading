@@ -1,0 +1,21 @@
+<template name="776e9966">
+  <view class="_div data-v-a3ce53dc comment-list">
+    <view class="_div data-v-a3ce53dc page-title">我的评论</view>
+    <view class="_div data-v-a3ce53dc comment" wx:key="comment.id" key="{{comment.id}}" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}" wx:for="{{comments}}" wx:for-index="index" wx:for-item="comment">
+      <view class="_div data-v-a3ce53dc user">
+        <view class="_div data-v-a3ce53dc inline">
+          <image src="{{comment.user_info.avatar}}" alt class="_img data-v-a3ce53dc avatar" mode="aspectFit"></image>
+          {{comment.user_info.nickName}}
+        </view>
+        <view class="_div data-v-a3ce53dc right">
+          {{comment.location||'未知地点'}}
+          <label class="_span data-v-a3ce53dc text-primary">--</label>
+          {{comment.phone||'未知型号'}}
+        </view>
+      </view>
+      <view class="_div data-v-a3ce53dc content">
+        {{comment.comment}}
+      </view>
+    </view>
+  </view>
+</template>

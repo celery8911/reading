@@ -1,0 +1,5 @@
+<template name="86cff8de">
+  <view class="_div data-v-5b355c65 progressbar"><progress percent="{{percent}}" activeColor="#DC5A3B" class="_progress data-v-5b355c65" />
+    <view class="_p data-v-5b355c65">{{year}}已经过去了{{days}}天，{{percent}}%</view>
+  </view>
+</template>

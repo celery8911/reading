@@ -1,0 +1,10 @@
+<import src="/components/CommentList.vue.wxml" />
+<import src="/components/Card.vue.wxml" /><template name="6f7a79f1">
+  <view class="_div data-v-b3b692c6 container"><template wx:if="{{userinfo.openId}}" user="current" data="{{...$root[$kk+'0'], $root}}" is="776e9966"></template>
+    <view wx:if="{{userinfo.openId}}" class="_div data-v-b3b692c6">
+      <view class="_div data-v-b3b692c6 page-title">我添加的图书</view> <template wx:key="book.id" data="{{...$root[$kk+'1-'+index], $root}}" is="48e9edd2" wx:for="{{books}}" wx:for-index="index" wx:for-item="book"></template>
+      <view wx:if="{{!books.length}}" class="_div data-v-b3b692c6">暂时还没添加图书</view>
+    </view>
+    <view wx:else class="_div data-v-b3b692c6 text-footer">请先登录</view>
+  </view>
+</template>

@@ -1,0 +1,45 @@
+@import "common/vendor.wxss";
+
+.right {
+  float: right;
+}
+.page-title {
+  padding-left: 20rpx;
+  background: #ccc;
+  line-height: 60rpx;
+  height: 60rpx;
+  font-size: 32rpx;
+}
+.text-footer {
+  text-align: center;
+  font-size: 24rpx;
+  margin-bottom: 24rpx;
+  margin-top: 40rpx;
+}
+.text-primary {
+  color: #EA5149;
+}
+.text-footer {
+  text-align: center;
+  font-size: 24rpx;
+  margin-bottom: 20rpx;
+}
+.text-primary {
+  color: #EA5149;
+}
+.btn {
+  color: white;
+  background: #DC5A3B;
+  margin-bottom: 20rpx;
+  padding-left: 30rpx;
+  padding-left: 30rpx;
+  border-radius: 4rpx;
+  font-size: 32rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+  width: 100%;
+  text-align: center;
+}
+.btn:active {
+  background: #FA5A49;
+}

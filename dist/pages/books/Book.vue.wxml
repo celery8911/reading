@@ -1,0 +1,6 @@
+<import src="/components/TopSwiper.vue.wxml" />
+<import src="/components/Card.vue.wxml" /><template name="1ccb6adb">
+  <view class="_div data-v-3c5b9887"><template data="{{...$root[$kk+'0'], $root}}" is="04e50036"></template> <template wx:key="book.id" data="{{...$root[$kk+'1-'+index], $root}}" is="48e9edd2" wx:for="{{books}}" wx:for-index="index" wx:for-item="book"></template>
+    <view class="_p data-v-3c5b9887 text-footer" wx:if="{{!more}}">没有更多数据了</view>
+  </view>
+</template>

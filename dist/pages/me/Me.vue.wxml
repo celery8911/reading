@@ -1,0 +1,8 @@
+<import src="/components/YearProgress.vue.wxml" /><template name="360a08dc">
+  <view class="_div data-v-00d7f266 container">
+    <view class="_div data-v-00d7f266 userinfo">
+      <image src="{{userinfo.avatarUrl}}" alt class="_img data-v-00d7f266"></image>
+      <view class="_p data-v-00d7f266">{{userinfo.nickName}}</view>
+    </view> <template data="{{...$root[$kk+'0'], $root}}" is="86cff8de"></template> <button wx:if="{{userinfo.openId}}" bindtap="handleProxy" class="_button data-v-00d7f266 btn" data-eventid="{{'1'}}" data-comkey="{{$k}}">添加图书</button><button wx:else open-type="getUserInfo" lang="zh_CN" class="_button data-v-00d7f266 btn" bindgetuserinfo="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">点击登录</button>
+  </view>
+</template>

@@ -1,0 +1,8 @@
+<import src="/components/BookInfo.vue.wxml" />
+<import src="/components/CommentList.vue.wxml" /><template name="b405242a">
+  <view class="_div data-v-0126e597"><template data="{{...$root[$kk+'0'], $root}}" is="208e4a3e"></template> <template data="{{...$root[$kk+'1'], $root}}" is="776e9966"></template>
+    <view class="_div data-v-0126e597 comment" wx:if="{{showAdd}}"><textarea value="{{comment}}" bindinput="handleProxy" class="_textarea data-v-0126e597 textarea" maxlength="140" placeholder="请输入图书短评" data-eventid="{{'0'}}" data-comkey="{{$k}}" /> <view class="_div data-v-0126e597 location">
+            地理位置：
+            <switch color="#DC5A3B" bindchange="handleProxy" checked="{{location}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_switch data-v-0126e597" /> <label class="_span data-v-0126e597 text-primary">{{location}}</label></view> <view class="_div data-v-0126e597 phone">
+            手机型号：
+            <switch color="#DC5A3B" bindchange="handleProxy" checked="{{phone}}" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_switch data-v-0126e597" /> <label class="_span data-v-0126e597 text-primary">{{phone}}</label></view> <button class="_button data-v-0126e597 btn" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">添加评论</button> <button class="_button data-v-0126e597 btn" open-type="share" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">转发给好友</button></view><view wx:else class="_div data-v-0126e597 text-footer">没有登录或者已经评论过了</view></view></template>

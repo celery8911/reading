@@ -1,0 +1,36 @@
+<import src="/components/Rate.vue.wxml" /><template name="208e4a3e">
+  <view class="_div data-v-2bc12d12 bookinfo">
+    <view class="_div data-v-2bc12d12 thumb">
+      <image src="{{info.image}}" alt class="_img data-v-2bc12d12 back" mode="aspectfill"></image>
+      <image src="{{info.image}}" alt class="_img data-v-2bc12d12 img" mode="aspectFit"></image>
+      <view class="_div data-v-2bc12d12 info">
+        <view class="_div data-v-2bc12d12 title">
+          {{info.title}}
+        </view>
+        <view class="_div data-v-2bc12d12 author">
+          {{info.author}}
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-2bc12d12 detail">
+      <image src="{{userInfo.avatar}}" mode="aspectFit" class="_img data-v-2bc12d12 avatar"></image>
+      {{userInfo.name}}
+      <view class="_div data-v-2bc12d12 right text-primary">
+        {{info.rate}}分 <template data="{{...$root[$kk+'0'], $root}}" is="15971a32"></template></view>
+    </view>
+    <view class="_div data-v-2bc12d12 detail">
+      {{info.publisher}}
+      <view class="_div data-v-2bc12d12 right">
+        {{info.price}}
+      </view>
+    </view>
+    <view class="_div data-v-2bc12d12 tags">
+      <view class="_div data-v-2bc12d12 badge" wx:key="index" key="{{index}}" wx:for="{{info.tags}}" wx:for-index="index" wx:for-item="tag">
+        {{tag}}
+      </view>
+    </view>
+    <view class="_div data-v-2bc12d12 summary">
+      <view wx:key="index" key="{{index}}" wx:for="{{info.summary}}" wx:for-index="index" wx:for-item="summary" class="_p data-v-2bc12d12">{{summary}}</view>
+    </view>
+  </view>
+</template>

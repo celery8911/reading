@@ -1,0 +1,33 @@
+<import src="/components/Rate.vue.wxml" /><template name="48e9edd2">
+  <navigator url="{{detailUrl}}" class="_a data-v-3fa875eb">
+    <view class="_div data-v-3fa875eb book-card">
+      <view class="_div data-v-3fa875eb thumb" catchtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <image src="{{book.image}}" class="_img data-v-3fa875eb img" mode="aspectFit"></image>
+      </view>
+      <view class="_div data-v-3fa875eb detail">
+        <view class="_div data-v-3fa875eb row text-primary">
+          <view class="_div data-v-3fa875eb right">
+            {{book.rate}}
+            <template data="{{...$root[$kk+'0'], $root}}" is="15971a32"></template></view>
+          <view class="_div data-v-3fa875eb left">
+            {{book.title}}
+          </view>
+        </view>
+        <view class="_div data-v-3fa875eb row">
+          <view class="_div data-v-3fa875eb right text-primary"> 浏览量：{{book.count}}
+          </view>
+          <view class="_div data-v-3fa875eb left">
+            {{book.author}}
+          </view>
+        </view>
+        <view class="_div data-v-3fa875eb row">
+          <view class="_div data-v-3fa875eb right"> 添加人：{{book.user_info.nickName}}
+          </view>
+          <view class="_div data-v-3fa875eb left">
+            {{book.publisher}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </navigator>
+</template>
